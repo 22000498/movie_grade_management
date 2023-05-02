@@ -12,7 +12,7 @@ git clone https://github.com/22000498/movie_rating_management.git
 Apple clang version 14.0.0 (clang-1400.0.29.202)
 
 ### Struct
-```~C
+```C
 typedef struct {
   char* title
   char* director
