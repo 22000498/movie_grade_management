@@ -49,7 +49,7 @@ typedef struct {
 ## Authors
 * [Kim-Hyun-Seung](https://github.com/Kim-Hyun-Seung) : 한동대학교 전산전자공학부 22000202 김현승
 
-  - [X] Contributors 
+  - [X] Collaborators
   
   - [ ] github WIKI
   
