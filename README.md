@@ -5,7 +5,7 @@
 ### 영화 평점 관리 CRUD 프로그램 입니다.
 
 ## Getting Started
-영화 제목, 감독, 장르, 평점, 배급사에 대한 정보를 담은 구조체입니다.
+### Struct
 ```~C
 typedef struct {
   char* title
@@ -15,6 +15,7 @@ typedef struct {
   char* distributor
 } Movie;
 ```
+영화 제목, 감독, 장르, 평점, 배급사에 대한 정보를 담은 구조체입니다.
 ### Function
 ```int selectMenu()``` : 영화 평점 관리 프로그램에 대한 기능 메뉴를 사용자에게 보여줍니다.
 
