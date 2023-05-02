@@ -5,6 +5,12 @@
 ### 영화 평점 관리 CRUD 프로그램 입니다.
 
 ## Getting Started
+```zsh 
+git clone https://github.com/22000498/movie_rating_management.git
+```
+### Development Environment
+Apple clang version 14.0.0 (clang-1400.0.29.202)
+
 ### Struct
 ```~C
 typedef struct {
