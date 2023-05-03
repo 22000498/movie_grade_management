@@ -43,7 +43,7 @@ typedef struct {
 
 ```void searchMovie()``` : 특정 영화 제목을 검색하면, 그 영화에 대한 정보가 출력됩니다.
 
-```void sortMovie()``` : 높은 평점 순서대로 정렬해 영화 제목을 출력합니다.
+```void sortMovie()``` : 높은 평점 순서대로 영화 제목을 정렬해 출력합니다.
 
 ## Tech Stack
 <img src="https://img.shields.io/badge/c-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
