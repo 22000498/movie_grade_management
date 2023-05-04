@@ -25,7 +25,7 @@ typedef struct {
 ### Function
 ```int selectMenu()``` : 영화 평점 관리 프로그램에 대한 기능 메뉴를 사용자에게 보여줍니다.
 
-```void addMovie()``` : 영화 제목, 감독, 장르, 평점, 배급사 데이터를 추가합니다. 
+```void createMovie()``` : 영화 제목, 감독, 장르, 평점, 배급사 데이터를 추가합니다. 
 
 ```void readMovie()``` : 특정 영화 제목에 해당하는 데이터를 출력합니다. 
 
