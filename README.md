@@ -14,11 +14,11 @@ Apple clang version 14.0.0 (clang-1400.0.29.202)
 ### Struct
 ```C
 typedef struct {
-  char* title
-  char* director
-  char* genre
-  float rating
-  char* distributor
+  char* title;
+  char* director;
+  char* genre;
+  float rating;
+  char* distributor;
 } Movie;
 ```
 영화 제목, 감독, 장르, 평점, 배급사에 대한 정보를 담은 구조체입니다.
