@@ -57,7 +57,7 @@ typedef struct {
   
   - [X] movie_rating_management 프로그램 구현
   
-  - [] movie_rating_management library 분리
+  - [ ] movie_rating_management library 분리
   
 * [22000498](https://github.com/22000498) : 한동대학교 전산전자공학부 22000498 이건요
 
