@@ -11,12 +11,12 @@ typedef struct Field {
 
 typedef struct Node {
   Field Data;
-  struct Node *NextNode;
+  struct Node* NextNode;
 } Node;
 
 typedef struct List {
-  Node *Head;
-  Node *Tail;
-  Node *Curr;
+  Node* Head;
+  Node* Tail;
+  Node* Curr;
 } List;
 ```
