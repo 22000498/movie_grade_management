@@ -65,6 +65,6 @@ typedef struct {
   
   - [X] github Issues, Discussions, Projects
   
-  - [ ] movie_rating_management 프로그램 구현
+  - [X] movie_rating_management 프로그램 구현
 
 ## License
