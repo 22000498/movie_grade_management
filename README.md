@@ -1,26 +1,26 @@
-# 2023-1 Open Source Software Lab 팀 프로젝트
+## Demo1 : MRM CRUD Program with SLL
 
-![](https://cdn.pixabay.com/photo/2016/01/22/08/17/banner-1155437_1280.png)
-
-### 영화 평점 관리 CRUD 프로그램 입니다.
-
-## Getting Started
-```zsh 
-git clone https://github.com/22000498/movie_rating_management.git
-```
-### Development Environment
-Apple clang version 14.0.0 (clang-1400.0.29.202)
-
-### Struct
 ```C
-typedef struct {
-  char* title
-  char* director
-  char* genre
-  float rating
-  char* distributor
-} Movie;
+typedef struct Field {
+  char* title;
+  char* director;
+  char* genre;
+  float rating;
+  char* distributor;
+} Field;
+
+typedef struct Node {
+  Field Data;
+  struct Node* NextNode;
+} Node;
+
+typedef struct List {
+  Node* Head;
+  Node* Tail;
+  Node* Curr;
+} List;
 ```
+<<<<<<< HEAD
 영화 제목, 감독, 장르, 평점, 배급사에 대한 정보를 담은 구조체입니다.
 ### Function
 `int selectMenu()` : 영화 평점 관리 프로그램에 대한 기능 메뉴를 사용자에게 보여줍니다.
@@ -68,3 +68,5 @@ typedef struct {
   - [ ] movie_rating_management 프로그램 구현
 
 ## License
+=======
+>>>>>>> 4d830e9f9471e243de21315cafb8b09f0bf05a09
