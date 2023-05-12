@@ -1,11 +1,11 @@
 #include "movie_rating.h"
 
 void readLine(char _str[], int _buf, FILE *_fp){
-	int ch, len = 0;
+    int ch, len = 0;
     getchar();
-	while ((ch = fgetc(_fp)) != '\n' && ch != EOF)
-		if (len < _buf - 1)
-			_str[len++] = ch;
+    while ((ch = fgetc(_fp)) != '\n' && ch != EOF)
+	if (len < _buf - 1)
+	    _str[len++] = ch;
 	_str[len] = '\0';
 }
 
