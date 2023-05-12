@@ -32,6 +32,7 @@ int main(void){
             saveDataToFile(Head);
             break;
         case 0:
+            AllDeleteNode(Head, &NodeCnt);
             exit = true;
             break;
         default:
