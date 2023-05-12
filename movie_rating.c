@@ -3,7 +3,6 @@
 #include <string.h>
 #include <stdbool.h>
 
-#define gets(s) gets_s(s)
 #define BUF 30
 
 typedef struct Node {
