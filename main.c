@@ -2,36 +2,50 @@
 
 int main(void){
     printf("\n🎬 MRM Load.\n");
-    init();
+    Movie *movie = NULL;
+    size_t movieCnt = 0;
     bool exit = false;
-    loadFile();
+    loadDataFromFile(&movie, &movieCnt);
     while(!exit){
         int no = selectNo();
         switch(no)
         {
         case 1:
-            createMovie();
+            createMovie(&movie, &movieCnt);
+            printf("✅ (%zu) createMovie Success.\n", movieCnt);
             break;
         case 2:
-            reviseMovie();
+        {   int rNo;
+            printf("\nRevise(No.) : ");
+            scanf("%d", &rNo);
+            if(rNo < 1 || rNo > movieCnt){
+                printf("🚨 reviseMovie Error : No revise %d number.\n", rNo);
+            } else {
+                reviseMovie(&movie[rNo - 1]);
+                printf("✅ (%d) reviseMovie Success.\n", rNo);
+            }
             break;
+        }
         case 3:
-            readMovie();
+            readMovie(&movie, movieCnt);
             break;
         case 4:
-            deleteMovie();
+            deleteMovie(&movie, &movieCnt);
+            printf("✅ (%zu) deleteMovie Success.\n", movieCnt);
             break;
         case 5:
-            sortRating();
+            Sort(movie, 0, movieCnt - 1);
+            printf("✅ (%zu)Sort Success.\n", movieCnt);
+            readMovie(&movie, movieCnt);
             break;
-        case 6:
-            searchTitle();
+        case 6:    
+            searchTitle(&movie, movieCnt);
             break;
         case 7:
-            saveFile();
+            saveDataToFile(&movie, movieCnt);
             break;
         case 0:
-            allDeleteMovie();
+            allDeleteMovie(&movie, &movieCnt);
             exit = true;
             break;
         default:
