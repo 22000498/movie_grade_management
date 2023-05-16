@@ -47,7 +47,8 @@ int main(void){
             printf("✅ (%zu)Sort Success.\n", movieCnt);
             readMovie(movie, movieCnt);
             break;
-        case 6:    
+        case 6:  
+            readMovie(movie, movieCnt);  
             searchTitle(&movie, movieCnt);
             break;
         case 7:
@@ -55,6 +56,7 @@ int main(void){
             break;
         case 0:
             allDeleteMovie(&movie, &movieCnt);
+            printf("✅ (%zu) allDeleteMovie Success.\n", movieCnt);
             exit = true;
             break;
         default:

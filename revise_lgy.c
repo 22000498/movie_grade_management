@@ -68,8 +68,7 @@ void readMovie(Movie* _movie, size_t _movieCnt){
     size_t i = 0;
     printf("\n*=* *=* *=* =* =* =* Movie *= *= *= *=* *=* *=*\n");
     for(; i < _movieCnt; i++){
-        if(_movie[i].rating != -1.f)
-            printf("%s %s %s %.1f %s\n", _movie[i].title, _movie[i].genre, _movie[i].director, _movie[i].rating, _movie[i].distributor);
+        printf("%s %s %s %.1f %s\n", _movie[i].title, _movie[i].genre, _movie[i].director, _movie[i].rating, _movie[i].distributor);
     }
     printf("*=* *=* *=* =* =* =* *=*=* *= *= *= *=* *=* *=*\n");
     printf("✅ (%zu) readMovie Success.\n", i);
@@ -83,7 +82,7 @@ void deleteMovie(Movie* _movie, size_t* _movieCnt, size_t dNo){
         strcpy(_movie[i-1].director, _movie[i].director);
         _movie[i-1].rating = _movie[i].rating;
         strcpy(_movie[i-1].distributor, _movie[i].distributor);
-    } 
+    }
     free(&_movie[i-1]);
     (*_movieCnt)--;
 }
@@ -97,7 +96,7 @@ void searchTitle(Movie** _movie, size_t _movieCnt){
         if(!strcmp((*_movie)[i].title, title)){
             printf("\n*=* *=* *=* =* =* =* Movie *= *= *= *=* *=* *=*\n");
             printf("%s %s %s %.1f %s\n", (*_movie)[i].title, (*_movie)[i].genre, (*_movie)[i].director, (*_movie)[i].rating, (*_movie)[i].distributor);
-            printf("*=* *=* *=* =* =* =* *=*=* *= *= *= *=**=* *=*\n");
+            printf("*=* *=* *=* =* =* =* *=*=* *= *= *= *=* *=* *=*\n");
         }
         else{
             notEqual++;
@@ -107,11 +106,12 @@ void searchTitle(Movie** _movie, size_t _movieCnt){
     }
 }
 
-void allDeleteMovie(Movie** _movie, size_t* _movieCnt){
-    while(*_movieCnt){
-        free(*_movie + (*_movieCnt-1));
-        (*_movieCnt)--;
-    }
+void allDeleteMovie(Movie** _movie, size_t *_movieCnt){
+    size_t i = 0;
+    for(; i < *_movieCnt; i++)
+        free(_movie + *_movieCnt);
+    *_movieCnt -= i;
+    free(_movie);
     printf("✅ (%zu) allDeleteMovie Success.\n", *_movieCnt);
 }
 
