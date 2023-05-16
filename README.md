@@ -83,9 +83,9 @@ typedef struct Movie {
 
   - [X] Collaborators
   
-  - [X] movie_rating_management with DA 프로그램 구현
+  - [X] movie_rating_management with DA 프로그램 구현 (branch : hs)
 
-  - [X] movie_rating_management with DA library 분리
+  - [X] movie_rating_management with DA library 분리 (branch : hs)
  
 * [22000498](https://github.com/22000498) : 한동대학교 전산전자공학부 22000498 이건요
 
@@ -97,15 +97,15 @@ typedef struct Movie {
 
   - [X] git Workflow
 
-  - [X] movie_rating_management with SLL 프로그램 구현
+  - [X] movie_rating_management with SLL 프로그램 구현 (branch : lgy)
 
-  - [X] movie_rating_management with SLL library 분리
+  - [X] movie_rating_management with SLL library 분리 (branch : lgy)
   
-  - [X] movie_rating_management with DA 프로그램 구현
+  - [X] movie_rating_management with DA 프로그램 구현 (branch : khs)
   
-  - [X] movie_rating_management with DA library 분리
+  - [X] movie_rating_management with DA library 분리 (branch : khs)
 
-  - [X] movie_rating_management with DA Makefile 작성
+  - [X] movie_rating_management with DA Makefile 작성 (branch : main)
 
   - [X] ./screenshots Upload
 
