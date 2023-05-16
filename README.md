@@ -89,4 +89,6 @@ typedef struct Movie {
 
   - [X] movie_rating_management with DA Makefile 작성
 
+  - [X] ./screenshots Upload
+
 ## License
