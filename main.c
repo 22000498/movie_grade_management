@@ -21,22 +21,31 @@ int main(void){
             if(rNo < 1 || rNo > movieCnt){
                 printf("🚨 reviseMovie Error : No revise %d number.\n", rNo);
             } else {
-                reviseMovie(&movie[rNo - 1]);
+                reviseMovie(&movie[rNo-1]);
                 printf("✅ (%d) reviseMovie Success.\n", rNo);
             }
             break;
         }
         case 3:
-            readMovie(&movie, movieCnt);
+            readMovie(movie, movieCnt);
             break;
         case 4:
-            deleteMovie(&movie, &movieCnt);
-            printf("✅ (%zu) deleteMovie Success.\n", movieCnt);
+        {
+            size_t dNo;
+            printf("\nDelete(No.) : ");
+            scanf("%zu", &dNo);
+            if(dNo < 1 || dNo > movieCnt){
+                printf("🚨 deleteMovie Error : No delete %zu number.\n", dNo);
+            } else {
+                deleteMovie(movie, &movieCnt, dNo);
+                printf("✅ (%zu) deleteMovie Success.\n", movieCnt);
+            }
             break;
+        }
         case 5:
             Sort(movie, 0, movieCnt - 1);
             printf("✅ (%zu)Sort Success.\n", movieCnt);
-            readMovie(&movie, movieCnt);
+            readMovie(movie, movieCnt);
             break;
         case 6:    
             searchTitle(&movie, movieCnt);
