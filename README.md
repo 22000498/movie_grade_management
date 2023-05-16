@@ -83,6 +83,10 @@ typedef struct Movie {
 
   - [X] Collaborators
   
+  - [X] movie_rating_management with DA 프로그램 구현
+
+  - [X] movie_rating_management with DA library 분리
+ 
 * [22000498](https://github.com/22000498) : 한동대학교 전산전자공학부 22000498 이건요
 
   - [X] Repo Owner
