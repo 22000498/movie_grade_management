@@ -46,7 +46,7 @@ typedef struct Movie {
 
 `void saveDataToFile(Movie** _movie, size_t _movieCnt);`
 
-`void Swap(Movie* _movie, int _sour, int _dest);`
+`void Swap(Movie* _movie, int _src, int _dest);`
 
 `void Sort(Movie* _movie, int _a, int _b);`
 
