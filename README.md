@@ -27,16 +27,27 @@ typedef struct Movie {
 영화 제목, 장르, 감독, 평점, 배급사에 대한 정보를 담은 구조체입니다.
 ### Function 
 `int selectNo();`
+
 `int readStr(FILE* _fp, char* _str, int _buf);`
+
 `void createMovie(Movie** _movie, size_t* _movieCnt);`
+
 `void reviseMovie(Movie* _movie);`
+
 `void readMovie(Movie* _movie, size_t _movieCnt);`
+
 `void deleteMovie(Movie* _movie, size_t* _movieCnt, size_t dNo);`
+
 `void allDeleteMovie(Movie** _movie, size_t* _movieCnt);`
+
 `void searchTitle(Movie** _movie, size_t _movieCnt);`
+
 `void loadDataFromFile(Movie** _movie, size_t* _movieCnt);`
+
 `void saveDataToFile(Movie** _movie, size_t _movieCnt);`
+
 `void Swap(Movie* _movie, int _sour, int _dest);`
+
 `void Sort(Movie* _movie, int _a, int _b);`
 
 ## Tech Stack
