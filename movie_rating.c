@@ -1,8 +1,8 @@
 #include "movie_rating.h"
 
 void readLine(char _str[], int _buf, FILE *_fp){
+    rewind(stdin);
     int ch, len = 0;
-    getchar();
     while ((ch = fgetc(_fp)) != '\n' && ch != EOF)
 	if (len < _buf - 1)
 	    _str[len++] = ch;
