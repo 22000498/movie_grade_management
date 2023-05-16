@@ -9,15 +9,15 @@
 MRM의 사용자는 실행 파일을 통해 영화 평점 관리 프로그램을 이용할 수 있으며, 높은 평점 순서대로 정렬한 영화 목록을 볼 수 있습니다.
 
 ## Getting Started
+### Development Environment
+Apple clang version 14.0.0 (clang-1400.0.29.202)
+
 ```zsh 
 % git clone https://github.com/22000498/movie_rating_management.git
 % make clean
 % make
 % ./movie
 ```
-### Development Environment
-Apple clang version 14.0.0 (clang-1400.0.29.202)
-
 ### Struct
 ```C
 typedef struct Movie {
