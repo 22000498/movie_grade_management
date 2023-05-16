@@ -21,6 +21,20 @@ Apple clang version 14.0.0 (clang-1400.0.29.202)
 
 % ./movie
 ```
+### Library
+```C
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+```
+
+### Macro
+```C
+#define BUF_MAX 256
+#define BUF 30
+```
+
 ### Struct
 ```C
 typedef struct Movie {
