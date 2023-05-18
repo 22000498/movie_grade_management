@@ -67,6 +67,8 @@ typedef struct Movie {
 
 `int readStr(FILE* _fp, char* _str, int _buf);`
 
+`void loadDataFromFile(Movie** _movie, size_t* _movieCnt);`
+
 `void createMovie(Movie** _movie, size_t* _movieCnt);`
 
 `void reviseMovie(Movie* _movie);`
@@ -75,17 +77,13 @@ typedef struct Movie {
 
 `void deleteMovie(Movie* _movie, size_t* _movieCnt, size_t dNo);`
 
-`void allDeleteMovie(Movie** _movie, size_t* _movieCnt);`
-
 `void searchTitle(Movie** _movie, size_t _movieCnt);`
 
-`void loadDataFromFile(Movie** _movie, size_t* _movieCnt);`
-
-`void saveDataToFile(Movie** _movie, size_t _movieCnt);`
+`void Sort(Movie* _movie, int _a, int _b);`
 
 `void Swap(Movie* _movie, int _src, int _dest);`
 
-`void Sort(Movie* _movie, int _a, int _b);`
+`void saveDataToFile(Movie** _movie, size_t _movieCnt);`
 
 ## Tech Stack
 <img src="https://img.shields.io/badge/c-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
