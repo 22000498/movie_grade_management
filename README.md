@@ -21,6 +21,22 @@ Apple clang version 14.0.0 (clang-1400.0.29.202)
 
 % ./movie
 ```
+
+### Folder Structure
+```
+---- movie_rating_management
+ |-- ./screenshots
+ |-- Makefile
+ |-- README.md
+ |-- main.c
+ |-- main.o
+ |-- movie
+ |-- movie.txt
+ |-- revise_lgy.c
+ |-- revise_lgy.h
+ |-- revise_lgy.o
+```
+
 ### Library
 ```C
 #include <stdio.h>
