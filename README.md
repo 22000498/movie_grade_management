@@ -107,7 +107,7 @@ typedef struct Movie {
   
   - [X] README.md 작성
   
-  - [X] github Issues, Discussions, Projects, WIKI 작성
+  - [X] github Issues, Discussions, Projects 작성
 
   - [X] git Workflow
 
@@ -124,5 +124,7 @@ typedef struct Movie {
   - [X] movie_rating_management with DA Makefile 작성 (branch : main)
 
   - [X] ./screenshots Upload
+
+  - [X] github WIKI 작성
 
 ## License
